@@ -2,6 +2,7 @@
 
 let mainWindow = null;
 
+// Remove top menu
 app.on('browser-window-created',function(e,window) {
 	window.setMenu(null);
 });
