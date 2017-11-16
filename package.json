@@ -1,0 +1,14 @@
+{
+  "name": "DemoApp",
+  "version": "0.0.0",
+  "description": "Testing the Raspberry PI",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Andrias Sundskarð",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.7.9"
+  }
+}
