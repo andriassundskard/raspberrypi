@@ -2,14 +2,17 @@
 
 let mainWindow = null;
 
+app.on('browser-window-created',function(e,window) {
+	window.setMenu(null);
+});
+
 app.on("ready", function() {
 	mainWindow = new BrowserWindow({
-		width: 400,
-		height: 300,
 		show: false
 	});
 	mainWindow.loadURL("file://${ __dirname }/index.html");
 	mainWindow.once("ready-to-show", () => {
+		mainWindow.maximize();
 		mainWindow.show();
 	});
 	mainWindow.on("closed", function() {
